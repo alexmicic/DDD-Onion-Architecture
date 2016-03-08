@@ -1,0 +1,5 @@
+F:\My documents\FAKLUTET\MASTER\Napredne web tehnologije\Domaci-V\NasaBanka\NasaBanka.Domain\bin\Debug\NasaBanka.Domain.dll
+F:\My documents\FAKLUTET\MASTER\Napredne web tehnologije\Domaci-V\NasaBanka\NasaBanka.Domain\bin\Debug\NasaBanka.Domain.pdb
+F:\My documents\FAKLUTET\MASTER\Napredne web tehnologije\Domaci-V\NasaBanka\NasaBanka.Domain\obj\Debug\NasaBanka.Domain.csprojResolveAssemblyReference.cache
+F:\My documents\FAKLUTET\MASTER\Napredne web tehnologije\Domaci-V\NasaBanka\NasaBanka.Domain\obj\Debug\NasaBanka.Domain.dll
+F:\My documents\FAKLUTET\MASTER\Napredne web tehnologije\Domaci-V\NasaBanka\NasaBanka.Domain\obj\Debug\NasaBanka.Domain.pdb

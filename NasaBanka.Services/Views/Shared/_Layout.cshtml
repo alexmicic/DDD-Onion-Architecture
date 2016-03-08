@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Naša Banka</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @RenderSection("css", required: false)
+</head>
+<body>
+    <div class="container holder">
+        <header class="header">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/"><img src="~/images/logo.png" alt="Naša Banka" /></a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li>@Html.ActionLink("Naslovna", "Index", "Home")</li>
+                            <li>@Html.ActionLink("O nama", "About", "Home")</li>
+                            <li>@Html.ActionLink("Stanovništvo", "People", "Home")</li>
+                            <li>@Html.ActionLink("Mali biznis", "SmallBusiness", "Home")</li>
+                            <li class="dropdown">
+                                <a href="@Url.Action("Services", "Home", null)" target="_self" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Usluge <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="@Url.Action("Services", "Home", null)">Tekući računi</a></li>
+                                    <li><a href="@Url.Action("Services", "Home", null)">Krediti</a></li>
+                                    <li><a href="@Url.Action("Services", "Home", null)">Štednja</a></li>
+                                    <li><a href="@Url.Action("Services", "Home", null)">Obaveznice</a></li>
+                                    <li><a href="@Url.Action("Services", "Home", null)">Devizni poslovi</a></li>
+                                    <li><a href="@Url.Action("Services", "Home", null)">E-banking</a></li>
+                                </ul>
+                            </li>
+                            <li>@Html.ActionLink("Kontakt", "Contact", "Home")</li>
+                            <li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, null)</li>
+                            <li>@Html.ActionLink("Servisi", "ApiServices", "Home")</li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div><!--/.container-fluid -->
+            </nav>
+        </header>
+
+        <div class="body-content">
+            @RenderBody()
+        </div>
+
+        <footer>
+            <p>&copy; @DateTime.Now.Year Naša Banka. All rights reserved.</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

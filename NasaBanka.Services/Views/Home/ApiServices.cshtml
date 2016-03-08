@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Servisi";
+}
+@section scripts {
+    <script src="~/Scripts/api.js"></script>
+}
+
+<div class="page">
+    <div class="page-header">
+        <h1>@ViewBag.Title</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <a class="loadData" href="#" data-table="tableMonth" data-url="/api/client" data-params="month">Učitaj sve nove korisnike koji imaju besplatnih mesec dana korišćenja</a>
+            <table id="tableMonth" class="table" style="display:none;">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Ime</th>
+                        <th>Prezime</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <a class="loadData" href="#" data-table="tableDin" data-url="/api/client" data-params="din">Učitaj sve korisnike koji imaju besplatnih mesec dana korišćenja (više od 100.000,00din priliva)</a>
+            <table id="tableDin" class="table" style="display:none;">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Ime</th>
+                        <th>Prezime</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <a class="loadData" href="#" data-table="tableEur" data-url="/api/client" data-params="eur">Učitaj sve korisnike koji imaju mogućnost povoljnijeg kursa EUR -> DIN (vise od 1.000eur priliva)</a>
+            <table id="tableEur" class="table" style="display:none;">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Ime</th>
+                        <th>Prezime</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</div>

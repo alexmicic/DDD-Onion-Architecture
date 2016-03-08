@@ -1,0 +1,160 @@
+﻿/* Fonts */
+@font-face {
+	font-family: 'ProximaNovaRegular';
+	src: url('../fonts/ProximaNovaRegular.eot');
+	src: local('ProximaNovaRegular'), url('../fonts/ProximaNovaRegular.woff') format('woff'), url('../fonts/ProximaNovaRegular.ttf') format('truetype');
+}
+*{
+    transition:background .3s ease;
+    -webkit-transition:background .3s ease;
+    -moz-transition:background .3s ease;
+    -o-transition:background .3s ease;
+}
+body{
+    background:#ecf0f1;
+    font-family:'ProximaNovaRegular';
+}
+h1,h2,h3,h4,h5,h6{font-weight:700;font-family:'ProximaNovaRegular';}
+.holder{
+    background:#fff;
+    padding:0;
+}
+.header{
+    background:#34495e;
+    padding:0 15px;
+}
+.navbar{
+    margin:0;
+    background:none;
+    border:none;
+}
+.navbar-brand{
+    padding:0;
+    margin-right:20px;
+}
+.navbar-brand img{
+    max-width:100%;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    background-color:#e98b39;
+    color:#fff;
+}
+.navbar-default .navbar-nav>li>a{
+    color:#8ebae6;
+    padding:15px 25px;
+}
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:active{
+    color:#fff;
+}
+.dropdown-menu{
+    border:none;
+}
+.slider{
+    padding:0;
+}
+footer{
+    background:#2c3e50;
+    padding:10px;
+    text-align:center;
+}
+footer p{
+    margin:0;
+    color:#fff;
+}
+.services{margin:0;} 
+.services .col-md-12{padding:0;}
+.box{padding:40px; border-left:1px solid #f2f2f2; border-top:1px solid #f2f2f2;}
+.box:hover{background:#2980b9; color:#fff;}
+.box:hover p a{background:#3498db;}
+.box1, .box4{border-left:none;}
+.box h3{font-size:2em; font-weight:400; position:relative; padding-left:40px;}
+.box p a{display:inline-block; color:#fff; background:#2980b9; padding:5px 10px; border-radius:5px;}
+.box p a:hover{text-decoration:none; opacity:.75;}
+
+.box h3:before{content:""; position:absolute; top:-3px; left:0; background:url(../images/sprite.png) no-repeat; width:32px; height:32px;}
+.box1 h3:before{background-position:0 0;}
+.box2 h3:before{background-position:-32px 0;}
+.box3 h3:before{background-position:-64px 0;}
+.box4 h3:before{background-position:0 -32px;}
+.box5 h3:before{background-position:-32px -32px;}
+.box6 h3:before{background-position:-64px -32px;}
+
+.box1:hover h3:before{background-position:0 -64px;}
+.box2:hover h3:before{background-position:-32px -64px;}
+.box3:hover h3:before{background-position:-64px -64px;}
+.box4:hover h3:before{background-position:0 -96px;}
+.box5:hover h3:before{background-position:-32px -96px;}
+.box6:hover h3:before{background-position:-64px -96px;}
+
+.page{padding:10px 20px;}
+.map{margin-bottom:20px;}
+
+.ui-widget-content{border:none;}
+.ui-widget-header{border:none; background:#34495e; border-radius:0;}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor{outline:none; border-radius:0;}
+#tabs p{font-size:14px;}
+.ui-widget{font-family:'ProximaNovaRegular';}
+.ui-tabs .ui-tabs-nav li{border-radius:0;}
+
+.input-group{margin-bottom:20px;}
+.input-group-addon.addon-left{min-width:140px;}
+
+.ui-dialog{box-shadow:0px 0px 50px rgba(0,0,0,.45);}
+
+.loadData{
+    display:block;
+    padding:10px;
+    text-align:center;
+    color:#fff;
+    background:#34495e;
+    border-radius:5px;
+    margin-bottom:10px;
+    transition:all .5s;
+}
+.loadData:hover,
+.loadData:active,
+.loadData:visited,
+.loadData:focus{
+    opacity:.75;
+    color:#fff;
+    text-decoration:none;
+}
+
+/* Extra small devices Phones (<768px) */
+@media (max-width: 768px) {
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+@media (max-width: 992px) and (min-width:768px){
+    .navbar-header{
+        float:none;
+    }
+    .navbar-brand{
+        float:none;
+        margin:0;
+        padding:0;
+        text-align:center;
+        width:100%;
+        display:block;
+    }
+    .navbar-brand>img{
+        display:inline-block;
+    }
+}

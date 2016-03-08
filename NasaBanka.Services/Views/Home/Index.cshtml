@@ -1,0 +1,170 @@
+﻿@{
+    ViewBag.Title = "Naslovna";
+}
+
+@section css {
+    <link href="~/Content/themes/base/all.css" rel="stylesheet" type="text/css" />
+}
+
+@section scripts {
+    @Scripts.Render("~/bundles/jquery-ui")
+    <script src="~/Scripts/main.js"></script>
+}
+
+<div class="slider">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="~/images/slide1.jpg" alt="Naša Banka Štednja">
+            </div>
+            <div class="item">
+                <img src="~/images/slide2.jpg" alt="Naša Banka E-banking">
+            </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<div class="services row">
+    <div class="col-md-12">
+        <div class="box box1 col-md-4">
+            <h3>Tekući računi</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p><a href="@Url.Action("Services", "Home", null)">Detaljnije <i class="glyphicon glyphicon-chevron-right"></i></a></p>
+        </div>
+        <div class="box box2 col-md-4">
+            <h3>Krediti</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p><a href="@Url.Action("Services", "Home", null)">Detaljnije <i class="glyphicon glyphicon-chevron-right"></i></a></p>
+        </div>
+        <div class="box box3 col-md-4">
+            <h3>Štednja</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p><a href="@Url.Action("Services", "Home", null)">Detaljnije <i class="glyphicon glyphicon-chevron-right"></i></a></p>
+        </div>
+    </div>
+</div>
+
+<div class="services row">
+    <div class="col-md-12">
+        <div class="box box4 col-md-4">
+            <h3>Obaveznice</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p><a href="@Url.Action("Services", "Home", null)">Detaljnije <i class="glyphicon glyphicon-chevron-right"></i></a></p>
+        </div>
+        <div class="box box5 col-md-4">
+            <h3>Devizni poslovi</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p><a href="@Url.Action("Services", "Home", null)">Detaljnije <i class="glyphicon glyphicon-chevron-right"></i></a></p>
+        </div>
+        <div class="box box6 col-md-4">
+            <h3>E-banking</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p><a href="@Url.Action("Services", "Home", null)">Detaljnije <i class="glyphicon glyphicon-chevron-right"></i></a></p>
+        </div>
+    </div>
+</div>
+
+<div id="tabs">
+    <ul>
+        <li><a href="#tab-1"><span>O nama</span></a></li>
+        <li><a href="#tab-2"><span>O našoj grupaciji</span></a></li>
+        <li><a href="#tab-3"><span>Naš tim</span></a></li>
+        <li><a href="#tab-4"><span>Medija centar</span></a></li>
+        <li><a href="#tab-5"><span>Kreditni kalkulator</span></a></li>
+        <li><a href="#tab-6"><span>Kursna lista</span></a></li>
+    </ul>
+    <div id="tab-1">
+        <p>U Nasoj banci pronaći ćete sigurnost koju tražite, jer mi smo vodeća banka u Srbiji, banka u čiju snagu veruje više od 1,7 miliona klijenata. Kao deo Intesa Sanpaolo pružamo vam pouzdanost koja je rezultat finansijske snage i znanja jedne od najstabilnijih međunarodnih bankarskih grupacija.</p>
+        <p>Kombinujući savremena svetska iskustva sa lokalnim umećem svakodnevno pronalazimo najbolja moguća rešenja koja zadovoljavaju Vaše finansijske potrebe. Bolji kvalitet života, prosperitet, razvoj privrede i čitavog društva ideje su za koje se zalažemo. Mi verujemo u budućnost i mislimo unapred sa Vama.</p>
+    </div>
+    <div id="tab-2">
+        <p>Ponosni smo što smo članica Intesa Sanpaolo, najsnažnije italijanske bankarske grupacije i jedne od vodećih banaka u evrozoni po visini tržišne kapitalizacije. Nastala spajanjem vodećih italijanskih banaka, Banca Intesa i Sanpaolo IMI, Intesa Sanpaolo je danas prisutna u više od 40 zemalja sveta.</p>
+        <p>
+            Internacionalno poslovanje naše matične Grupacije posebno je usredsređeno na region centralne i istočne Evrope, bliski istok i severnu Afriku, gde u 12 zemalja uslužuje 8,4 miliona klijenata. Grupa takođe pruža usluge korporativnim klijentima u 29 zemalja sveta.
+        </p>
+        <p>
+            Intesa Sanpaolo posvećena je unapređenju usluga za stanovništvo, pružanju značajne podrške razvoju poslovanja svojih klijenata, kao i ukupnom ekonomskom razvoju zemalja u kojima posluje.
+        </p>
+    </div>
+    <div id="tab-3">
+        <p>Želimo da radimo u društvu najboljih. Upravo zato nastojimo da stvorimo podsticajan ambijent koji omogućuje optimalan profesionalni razvoj i ostvarenje ličnih ambicija. Istovremeno, brižljivo negujemo kulturu timskog rada zbog sinergije koju donose objedinjeni potencijali. Nastojimo da izgradimo uspešan tim ljudi koji dobro rade zajedno, ponosni na to što su deo tima banke broj 1 u Srbiji.</p>
+        <p>Ukupan broj zaposlenih – 3.055</p>
+    </div>
+    <div id="tab-4">
+        <p>Posvećeni smo ostvarivanju efikasne komunikacije sa svim interesnim grupama, komunikacije zasnovane na principima verodostojnosti, transparentnosti i nepristrasnosti. Uvažavajući Vašu potrebu da na vreme dobijete sveže i tačne informacije, na stranicama Medija centra možete pronaći naše najnovije vesti, saopštenja za javnost, važnije novinske objave, kao i foto i video galeriju.</p>
+    </div>
+    <div id="tab-5">
+        <form name="calculate">
+            <div class="input-group">
+                <span class="input-group-addon addon-left">Iznos</span>
+                <input type="number" class="form-control" name="price" required>
+                <span class="input-group-addon">&euro;</span>
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon addon-left">Učešće</span>
+                <input type="number" class="form-control" name="participation" required>
+                <span class="input-group-addon">&euro;</span>
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon addon-left">Tip kredita</span>
+                <select name="creditType" required class="form-control">
+                    <option value="0" selected>Beskamatni</option>
+                    <option value="7.5">Kamatni</option>
+                </select>
+                <span class="input-group-addon">%</span>
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon addon-left">Rok otplate</span>
+                <select name="deadline" required class="form-control">
+                    <option value="12" selected>12 meseci</option>
+                    <option value="24">24 meseci</option>
+                    <option value="36">36 meseci</option>
+                    <option value="48">48 meseci</option>
+                    <option value="60">60 meseci</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon addon-left">Godišnja kamata</span>
+                <input type="number" class="form-control" name="yearlyRate" required disabled value="0">
+                <span class="input-group-addon">%</span>
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon addon-left">Mesečna rata</span>
+                <input type="number" class="form-control" name="montlyPrice" required disabled>
+                <span class="input-group-addon">&euro;</span>
+            </div>
+            <button type="submit" class="btn btn-default">Izračunaj</button>
+        </form>
+    </div>
+    <div id="tab-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">Kursna lista (<span id="base"></span>) na dan <span id="date"></span></div>
+
+            <table id="currencyList" class="table">
+                <thead>
+                    <tr>
+                        <th>Valuta</th>
+                        <th>1 &euro; = </th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <button class="btn btn-default" id="addList">Učitaj sve</button>
+    </div>
+</div>
